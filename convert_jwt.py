@@ -2,7 +2,7 @@ import base64
 import binascii
 import json
 import sys
-    
+
 
 if __name__ == "__main__":
     if not 1 < len(sys.argv) < 3:
