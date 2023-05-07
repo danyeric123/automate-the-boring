@@ -9,7 +9,7 @@ import requests
 # tab of
 #   https://cloud.google.com/console
 # Please ensure that you have enabled the YouTube Data API for your project.
-DEVELOPER_KEY = 'AIzaSyCTc53Pf0cdgGPS39hAdm_ZQoRTOnQSlHA'
+DEVELOPER_KEY = os.environ.get("DEVELOPER_KEY")
 
 def download_shiur(options):
     res = requests.get(options.url, params={
